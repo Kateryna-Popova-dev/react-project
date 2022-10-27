@@ -1,11 +1,10 @@
+import img from '../image/107-Johnny-Depp.jpg.webp'
 import {Nav} from "./Nav";
 
-export function Header(){
-    return(
-        <header className="header">
-            <a href="#">Logo</a>
-            <Nav></Nav>
-        </header>
+export function Header() {
+    return (
+<></>
     );
 }
+
 export default Header;

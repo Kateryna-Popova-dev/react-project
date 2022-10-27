@@ -1,27 +1,11 @@
-const Nav = () => {
-    return (
-        <ul>
-            <li>
-                <a href="./" className="nav_link">
-                    Link
-                </a>
-            </li>
-            <li>
-                <a href="./" className="nav_link">
-                    Link
-                </a>
-            </li>
-            <li>
-                <a href="./" className="nav_link">
-                    Link
-                </a>
-            </li>
-            <li>
-                <a href="./" className="nav_link">
-                    Link
-                </a>
-            </li>
-        </ul>
-    )
+import React from "react";
+
+class Nav extends React.Component {
+    render() {
+        return (
+            <></>
+        );
+    }
 }
+
 export {Nav}
