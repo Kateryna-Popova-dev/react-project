@@ -233,7 +233,7 @@ main .container .photos {
 }
 main .container .photos .arrow {
   position: absolute;
-  top: 260px;
+  top: 240px;
   padding: 0;
   background: #ddd;
   border-radius: 15px;
@@ -242,6 +242,15 @@ main .container .photos .arrow {
   line-height: 24px;
   color: #444;
   display: block;
+  height: 100px;
+  width: 30px;
+  cursor: pointer;
+}
+main .container .photos .arrow.btn-last {
+  left: 7px;
+}
+main .container .photos .arrow.btn-next {
+  right: 7px;
 }
 main .container .photos .photo-list {
   overflow: hidden;
@@ -264,14 +273,6 @@ main .container .photos .photo-list ul li img {
   padding: 10px;
   width: 830px;
   display: block;
-}
-main .container .photos .btn-last {
-  left: 7px;
-  cursor: pointer;
-}
-main .container .photos .btn-next {
-  right: 7px;
-  cursor: pointer;
 }
 
 footer {

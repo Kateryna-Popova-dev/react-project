@@ -292,7 +292,7 @@ main {
 
       .arrow {
         position: absolute;
-        top: 260px;
+        top: 240px;
         padding: 0;
         background: #ddd;
         border-radius: 15px;
@@ -301,6 +301,17 @@ main {
         line-height: 24px;
         color: #444;
         display: block;
+        height: 100px;
+        width: 30px;
+        cursor: pointer;
+
+        &.btn-last {
+          left: 7px;
+        }
+
+        &.btn-next {
+          right: 7px;
+        }
       }
 
       .photo-list {
@@ -328,16 +339,6 @@ main {
             }
           }
         }
-      }
-
-      .btn-last {
-        left: 7px;
-        cursor: pointer;
-      }
-
-      .btn-next {
-        right: 7px;
-        cursor: pointer;
       }
     }
   }
