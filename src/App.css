@@ -1,3 +1,287 @@
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  background: gainsboro;
+  width: 70%;
+  margin: auto;
+}
+
+.header .block1 {
+  background: #c9c0b9;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 0 0 10px 10px;
+  height: 200px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.header .block1 .image-holder {
+  padding: 15px;
+}
+.header .block1 .image-holder img {
+  box-shadow: 0 30px 20px -20px rgba(0, 0, 0, 0.2);
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+}
+.header .block1 .name-holder {
+  background: beige;
+  margin: 20px 0 50px 0;
+  padding: 30px 80px 0 80px;
+  border-radius: 8px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.header .block1 .name-holder h1 {
+  margin: 15px;
+  text-align: center;
+}
+.header .block2 {
+  height: 100px;
+}
+.header .block2 .nav {
+  background: #fff;
+  box-shadow: 0 30px 20px -20px rgba(0, 0, 0, 0.2);
+  margin-left: 430px;
+  margin-right: 30px;
+  padding-right: 40px;
+  border-radius: 0 0 10px 10px;
+  margin-top: -20px;
+}
+.header .block2 .nav ul {
+  margin-right: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+.header .block2 .nav ul :first-child {
+  border-radius: 10px 0 0 10px;
+}
+.header .block2 .nav ul :last-child {
+  border-radius: 0 10px 10px 0;
+}
+.header .block2 .nav li {
+  background: #f0f0f0;
+  margin: 15px 0 15px 0;
+  list-style-type: none;
+  padding: 9px 15px;
+  font: 14px "Roboto", sans-serif;
+}
+.header .block2 .nav li:hover {
+  background-color: #ded4c1;
+  transform: scale(1.05);
+  transition: transform 0.25s, background-color 0.3s, border-radius 0.3s;
+  border-radius: 10px;
+}
+.header .block2 .nav li a {
+  text-decoration: none;
+  color: #363430;
+}
+.header .block2 .nav li a:hover {
+  color: #080808;
+  transform: scale(1.2);
+}
+
+main {
+  background: #f8f8f8;
+}
+main .container .caption {
+  padding: 30px;
+  margin: 40px 50px 50px 50px;
+  text-align: center;
+}
+main .container .person-info {
+  display: flex;
+  margin: 30px;
+}
+main .container .person-info .block-img {
+  margin: 20px 50px 20px 20px;
+}
+main .container .person-info .block-img img {
+  box-shadow: rgba(255, 255, 255, 0.1) 0 1px 1px 0 inset, rgba(50, 50, 93, 0.25) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0 30px 60px -30px;
+  width: 230px;
+  height: 320px;
+  border-radius: 10px;
+  margin-left: 30px;
+}
+main .container .person-info .blockData {
+  background: #fff;
+}
+main .container .person-info .blockData .list-item {
+  display: flex;
+  font-size: 15px;
+  border-top: 1px solid #f0f0f0;
+  padding: 15px 20px;
+}
+main .container .person-info .blockData .list-item .nameCell {
+  margin: 3px 40px;
+  width: 200px;
+}
+main .container .person-info .blockData .list-item .nameCell span {
+  color: #363430;
+}
+main .container .person-info .blockData .list-item .dataCell {
+  margin: 3px 40px;
+  width: 250px;
+}
+main .container .biography {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  display: flex;
+  background: #ffffff;
+  height: 280px;
+  border-radius: 10px;
+  width: 900px;
+  margin: auto;
+}
+main .container .biography .tabs {
+  width: 970px;
+}
+main .container .biography .bioTabPanel {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 1.7em;
+  margin: 20px;
+  font-size: 1rem;
+}
+main .container .biography .bioTabPanel span {
+  width: 100%;
+  line-height: 1.7em;
+}
+main .container .description {
+  background: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  margin: 50px 40px;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+main .container .description p {
+  margin: 20px;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+main .container h2 {
+  margin: 50px 0;
+  text-align: center;
+}
+main .container .movies .movie-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+main .container .movies .movie-list .movie-item {
+  width: 220px;
+  margin: 10px;
+}
+main .container .movies .movie-list .movie-item a {
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+}
+main .container .movies .movie-list .movie-item a:hover {
+  transform: scale(1.03);
+  transition: all 0.3s;
+  filter: drop-shadow(11px 7px 5px #B4B4B4);
+}
+main .container .movies .movie-list .movie-item a img {
+  border-radius: 10px;
+}
+main .container .movies .movie-list .movie-item a p {
+  margin: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+main .container .awards {
+  display: flex;
+  justify-content: center;
+}
+main .container .awards .awards-list {
+  background: #fff;
+  width: 80%;
+  margin-bottom: 50px;
+}
+main .container .awards .awards-list .awards-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  border-top: 1px solid lightgray;
+  padding: 15px 20px;
+}
+main .container .awards .awards-list .awards-item .name {
+  width: 280px;
+}
+main .container .awards .awards-list .awards-item .data {
+  width: 320px;
+}
+main .container .awards .awards-list .awards-item .result {
+  width: 100px;
+}
+main .container h2 {
+  text-align: center;
+}
+main .container .photos {
+  margin-left: 80px;
+  margin-bottom: 20px;
+  width: 900px;
+  position: relative;
+  padding: 10px 40px;
+  border: 1px solid #CCC;
+  border-radius: 15px;
+  background: #eee;
+}
+main .container .photos .arrow {
+  position: absolute;
+  top: 260px;
+  padding: 0;
+  background: #ddd;
+  border-radius: 15px;
+  border: 1px solid gray;
+  font-size: 24px;
+  line-height: 24px;
+  color: #444;
+  display: block;
+}
+main .container .photos .photo-list {
+  overflow: hidden;
+  margin-right: 10px;
+}
+main .container .photos .photo-list ul {
+  display: flex;
+  height: 565px;
+  padding: 0;
+  list-style: none;
+  transition: margin-left 250ms;
+  font-size: 0;
+  position: relative;
+  left: 0;
+}
+main .container .photos .photo-list ul li {
+  display: inline-block;
+}
+main .container .photos .photo-list ul li img {
+  padding: 10px;
+  width: 830px;
+  display: block;
+}
+main .container .photos .btn-last {
+  left: 7px;
+  cursor: pointer;
+}
+main .container .photos .btn-next {
+  right: 7px;
+  cursor: pointer;
+}
+
+footer {
+  color: white;
+  height: 50px;
+  background: darkgrey;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /*# sourceMappingURL=App.css.map */
