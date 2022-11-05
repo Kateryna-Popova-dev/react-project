@@ -1,24 +1,16 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Stars from "./Components/Stars";
+import ClassStars from "./Components/ClassStars";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+        <h2>I`m a functional component</h2>
+        <Stars points={0}></Stars>
+        <h2>I`m a class component</h2>
+        <ClassStars points={0}></ClassStars>
+      </div>
   );
 }
 
