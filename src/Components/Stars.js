@@ -7,38 +7,22 @@ export const Stars = (props) => {
 
     const count = [1, 2, 3, 4, 5];
 
-    const saveResult = (event) => {
-        count.forEach(i => {
-            if (event.target.closest(`#a${i}`)) {
-                setPoints(i)
-                console.log(points)
-            }
+    const savePoints = (event, pointTargetSetter) => count.forEach(i => {
+        if (event.target.closest(`#a${i}`)) {
+            pointTargetSetter(i)
+        }
+    })
 
-        })
-    }
-    const view = (event) => {
-        count.forEach(i => {
-            if (event.target.closest(`#a${i}`)) {
-                setDynamicPoints(i)
-            }
-
-        })
-    }
-    const hide = (event) => {
-        count.forEach(i => {
-            if (event.target.closest(`#a${i}`)) {
-                setDynamicPoints(points)
-            }
-        })
-    }
-
-    return (
-        <div onPointerOver={view} onPointerOut={hide} onClick={saveResult} className="container">
-            {count.map(i =>
-                <img id={`a${i}`} className={i <= dynamicPoints ? 'isActive' : null} src={svg}/>
-            )}
-        </div>
-    );
+    return <div
+        className="container"
+        onPointerOut={() => setDynamicPoints(points)}
+        onClick={(event) => savePoints(event, setPoints)}
+        onPointerOver={(event) => savePoints(event, setDynamicPoints)}
+    >
+        {count.map(i =>
+            <img id={`a${i}`} className={i <= dynamicPoints ? 'isActive' : null} src={svg} key={i}/>
+        )}
+    </div>;
 };
 
 export default Stars;
