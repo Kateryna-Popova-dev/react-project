@@ -31,8 +31,23 @@
       filter: grayscale(100%);
 
       &.isActive {
+        animation: star .3s ease-in;
         filter: grayscale(0);
       }
     }
+  }
+}
+@keyframes star {
+  0% {
+    transform: scale(0.95);
+    filter: grayscale(1);
+  }
+  50% {
+    transform: scale(1.1);
+    filter: grayscale(0.5);
+  }
+  100% {
+    transform: scale(1);
+    filter: grayscale(0);
   }
 }
